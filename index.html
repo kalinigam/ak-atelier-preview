@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AK Atelier & Co. — Design Preview</title>
+<meta name="robots" content="noindex">
+<style>
+@font-face{font-family:"Gilmer";src:url("assets/fonts/Gilmer-Regular.otf") format("opentype");font-weight:400}
+@font-face{font-family:"Gilmer";src:url("assets/fonts/Gilmer-Light.otf") format("opentype");font-weight:300}
+@font-face{font-family:"Seasons";src:url("assets/fonts/Cormorant.ttf") format("truetype");font-weight:100 900;font-style:normal}
+@font-face{font-family:"Seasons";src:url("assets/fonts/Cormorant-Italic.ttf") format("truetype");font-weight:100 900;font-style:italic}
+:root{--ink:#000;--sand:#F1E9D6;--wheat:#E0D2B8;--taupe:#D1C5B4;--muted:#8f897c;--serif:"Seasons",Georgia,serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:var(--ink);font-family:"Gilmer",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;padding:clamp(28px,5vw,72px)}
+.wrap{max-width:1140px;margin:0 auto}
+.top{display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.02em}
+.top img{height:26px}
+.eye{margin-top:clamp(40px,7vw,90px);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--serif);font-weight:440;font-optical-sizing:auto;letter-spacing:-.01em;line-height:.98;font-size:clamp(40px,7vw,88px);margin:14px 0 6px}
+h1 .ac{font-style:italic;color:var(--taupe)}
+.sub{color:var(--muted);max-width:52ch;font-size:clamp(15px,1.4vw,18px)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,32px);margin-top:clamp(36px,5vw,64px)}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{display:block;border:1px solid rgba(0,0,0,.12);border-radius:20px;overflow:hidden;background:var(--sand);transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1)}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 70px -34px rgba(0,0,0,.4)}
+.card .shot{aspect-ratio:16/10;overflow:hidden;background:#1c1b18}
+.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.card .meta{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:20px clamp(18px,2vw,26px) 22px}
+.card .no{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3vw,44px);line-height:1;color:var(--taupe)}
+.card .nm{font-family:var(--serif);font-weight:440;font-size:clamp(20px,2vw,26px)}
+.card .go{font-size:13px;letter-spacing:.02em;color:var(--muted)}
+.foot{margin-top:clamp(44px,6vw,80px);padding-top:22px;border-top:1px solid rgba(0,0,0,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+</style></head>
+<body><div class="wrap">
+  <div class="top"><img src="assets/logo/AK-monogram.png" alt="AK">AK Atelier&amp;Co.</div>
+  <div class="eye">Landing Page — Design Preview</div>
+  <h1>Two <span class="ac">directions</span>.</h1>
+  <p class="sub">Two design concepts for the AK Atelier &amp; Co. landing page. Open either to view the full page. Best viewed on desktop.</p>
+  <div class="grid">
+    <a class="card" href="ctrnsvzg.html">
+      <div class="shot"><img src="preview/ctrnsvzg-thumb.jpg" alt="Concept 01 preview"></div>
+      <div class="meta"><div><span class="no">01</span> <span class="nm">Serif / Motion Hero</span></div><span class="go">View →</span></div>
+    </a>
+    <a class="card" href="site.html">
+      <div class="shot"><img src="preview/site-thumb.jpg" alt="Concept 02 preview"></div>
+      <div class="meta"><div><span class="no">02</span> <span class="nm">Editorial / Split</span></div><span class="go">View →</span></div>
+    </a>
+  </div>
+  <div class="foot"><span>Prepared by One Roll Studios</span><span>Design preview — not for distribution</span></div>
+</div></body></html>

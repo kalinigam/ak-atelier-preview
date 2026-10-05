@@ -1,0 +1,120 @@
+/* Services alternatives. Scoped to the replacement section. */
+.services-option{background:#fff;color:#000;--copy:#625e56;--rule:rgba(0,0,0,.16)}
+.services-option *{min-width:0}
+.services-option .option-heading{font-family:var(--serif);font-weight:440;letter-spacing:-.025em;line-height:1.02;font-size:clamp(42px,5.6vw,80px);margin:22px 0 0}
+.services-option .option-intro{font-size:15px;line-height:1.8;color:var(--copy);max-width:46ch}
+.services-option .option-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px}
+.services-option .option-head{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,6vw,90px);align-items:end;margin-bottom:62px}
+.services-option .option-head .option-heading{max-width:17ch}
+.services-option .compliance{color:var(--copy);max-width:none;font-size:12px;line-height:1.8;margin-top:48px;padding-top:24px}
+.services-option h3{font-family:var(--serif);font-weight:440;letter-spacing:-.02em;line-height:1.05}
+.services-option a:focus-visible,.services-option summary:focus-visible{outline:2px solid #000;outline-offset:6px}
+.services-option .service-number{font-family:var(--serif);font-weight:300;line-height:1;color:var(--taupe)}
+/* A — a generous image and a compact, touch-friendly service index. */
+.focus-layout{display:grid;grid-template-columns:1fr 1.12fr;gap:clamp(32px,6vw,86px);align-items:start}
+.focus-art{position:relative;aspect-ratio:4/5;overflow:hidden;background:#E0D2B8;border-radius:2px}
+.focus-art img{position:absolute;width:100%;height:100%;object-fit:cover;transition:opacity .45s ease;opacity:0}
+.focus-art img.is-active{opacity:1}
+.focus-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.6))}
+.focus-caption{position:absolute;left:30px;bottom:32px;right:30px;color:#fff;z-index:1;display:flex;align-items:end;justify-content:space-between;gap:20px}
+.focus-caption span:first-child{font-family:var(--serif);font-size:clamp(32px,3.5vw,52px);line-height:1}
+.focus-caption span:last-child{font-size:11px;letter-spacing:.12em}
+.focus-index{border-top:1px solid var(--rule)}
+.focus-index details{border-bottom:1px solid var(--rule);padding:0 0 0 4px}
+.focus-index summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:40px 1fr 26px;align-items:center;gap:16px;padding:27px 0}
+.focus-index summary::-webkit-details-marker{display:none}
+.focus-index summary .service-number{font-size:28px}
+.focus-index summary h3{font-size:clamp(30px,3.3vw,48px);transition:transform .25s}
+.focus-index summary:hover h3{transform:translateX(6px)}
+.focus-index .toggle-icon{width:24px;height:24px;position:relative}
+.focus-index .toggle-icon::before,.focus-index .toggle-icon::after{content:"";position:absolute;top:11px;left:4px;width:16px;height:1px;background:currentColor}
+.focus-index .toggle-icon::after{transform:rotate(90deg);transition:transform .25s}
+.focus-index details[open] .toggle-icon::after{transform:rotate(0)}
+.focus-index details[open] summary .service-number{color:#000}
+.focus-index details p{color:var(--copy);font-size:15px;line-height:1.8;margin:0 26px 30px 56px;max-width:36ch}
+/* B — four open editorial columns on a single connecting rule. */
+.column-services .option-head{grid-template-columns:1.35fr 1fr}
+.column-services .option-heading{max-width:18ch}
+.channel-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #000}
+.channel-column{position:relative;padding:30px 25px 0;border-right:1px solid var(--rule)}
+.channel-column:first-child{padding-left:0}
+.channel-column:last-child{padding-right:0;border-right:0}
+.channel-column::before{content:"";position:absolute;top:-4px;left:25px;width:7px;height:7px;border-radius:50%;background:#000}
+.channel-column:first-child::before{left:0}
+.channel-column .service-number{display:block;font-size:clamp(66px,7.5vw,108px);margin-bottom:30px}
+.channel-column h3{font-size:clamp(29px,3vw,42px);margin:0 0 18px}
+.channel-column p{color:var(--copy);font-size:14px;line-height:1.8;min-height:12em}
+.channel-image{height:150px;overflow:hidden;margin-top:28px;background:var(--bone)}
+.channel-image img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.channel-column:hover .channel-image img{transform:scale(1.07)}
+.channel-column:nth-child(even) .channel-image{border-radius:70px 70px 0 0}
+/* C — balanced service columns around a measured central hub. */
+.system-services>.lab{margin-bottom:34px}
+.system-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(180px,20vw,250px) minmax(0,1fr);grid-template-rows:1fr 1fr;position:relative;isolation:isolate;column-gap:clamp(32px,4vw,56px);row-gap:56px;padding:36px 0}
+.system-core{grid-column:2;grid-row:1/3;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.system-hub{display:grid;place-items:center;width:clamp(160px,16vw,196px);aspect-ratio:1;flex:none;position:relative;border:1px solid var(--taupe);border-radius:50%;background:#fff}
+.system-hub::before{content:"";position:absolute;inset:13px;border:1px solid var(--taupe);border-radius:50%}
+.system-core img{display:block;width:clamp(64px,7vw,86px);height:auto;position:relative}
+.system-channel{position:relative;z-index:1;padding:24px 0 12px;border-top:1px solid var(--rule);min-height:230px;background:#fff}
+.system-channel:nth-of-type(1){grid-column:1;grid-row:1}
+.system-channel:nth-of-type(2){grid-column:3;grid-row:1}
+.system-channel:nth-of-type(3){grid-column:1;grid-row:2}
+.system-channel:nth-of-type(4){grid-column:3;grid-row:2}
+.system-channel:nth-of-type(odd){text-align:right;padding-right:28px}
+.system-channel:nth-of-type(even){padding-left:28px}
+.system-service-heading{position:relative;margin-bottom:14px}
+.system-port{position:absolute;top:50%;width:7px;height:7px;background:#000;border-radius:50%;transform:translateY(-50%)}
+.system-channel:nth-of-type(odd) .system-port{right:-31.5px}
+.system-channel:nth-of-type(even) .system-port{left:-31.5px}
+.system-channel .service-number{font-size:42px;display:block;margin-bottom:17px}
+.system-channel h3{font-size:clamp(32px,3.3vw,48px);margin:0}
+.system-channel p{color:var(--copy);font-size:14px;line-height:1.8;max-width:37ch}
+.system-channel:nth-of-type(odd) p{margin-left:auto}
+.system-wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:0}
+.system-wires path{fill:none;stroke:var(--taupe);stroke-width:1;vector-effect:non-scaling-stroke}
+.system-services .option-head{margin:0 0 30px;align-items:end}
+.system-services .option-heading{font-size:clamp(42px,5.3vw,76px);max-width:18ch}
+.system-services .option-actions{margin-top:22px}
+@media(min-width:1100px){.column-services .option-head{margin-bottom:80px}}
+@media(max-width:1000px){.channel-column{padding-left:16px;padding-right:16px}.channel-column::before{left:16px}.channel-column p{min-height:14em}}
+@media(max-width:900px){
+ .system-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto;gap:32px;padding:24px 0 0}
+ .system-core,.system-wires,.system-port{display:none}
+ .system-channel:nth-of-type(n){grid-column:auto;grid-row:auto;min-height:0;text-align:left;padding-left:0;padding-right:0}
+ .system-channel:nth-of-type(n) p{margin-left:0}
+}
+@media(max-width:760px){
+ .services-option .option-head{grid-template-columns:1fr;gap:26px;margin-bottom:36px}
+ .services-option .option-heading{max-width:19ch;font-size:clamp(40px,8vw,60px)}
+ .services-option .option-intro{max-width:55ch}
+ .focus-layout{grid-template-columns:1fr;gap:28px}
+ .focus-art{aspect-ratio:16/9;max-height:320px}
+ .focus-index summary{padding:23px 0}
+ .focus-index details p{max-width:48ch}
+ .channel-columns{grid-template-columns:1fr 1fr}
+ .channel-column{padding:26px 20px 26px 0;border-right:0;border-bottom:1px solid var(--rule)}
+ .channel-column:nth-child(even){padding-left:20px;padding-right:0;border-left:1px solid var(--rule)}
+ .channel-column::before{left:0}.channel-column:nth-child(even)::before{left:20px}
+ .channel-column .service-number{font-size:74px;margin-bottom:22px}
+ .channel-column p{min-height:11em}
+ .channel-image{height:140px;margin-top:22px}
+ .system-channel h3{font-size:34px}
+}
+@media(max-width:440px){
+ .services-option .option-actions{gap:20px}
+ .channel-columns,.system-grid{grid-template-columns:1fr}
+ .channel-column:nth-child(n){padding:26px 0;border-left:0}
+ .channel-column:nth-child(n)::before{left:0}
+ .channel-column p{min-height:0;max-width:42ch}
+ .channel-column .service-number{font-size:64px;margin-bottom:16px}
+ .channel-image{height:180px}
+ .focus-index summary{grid-template-columns:30px 1fr 24px;gap:12px}
+ .focus-index details p{margin-left:42px;margin-right:0}
+ .focus-caption{left:22px;bottom:24px;right:22px}
+}
+@media(prefers-reduced-motion:reduce){.services-option *{transition:none!important;animation:none!important}}
+/* Section-only mode is used by the comparison page; full previews remain intact. */
+html.services-only{scroll-behavior:auto}
+.services-only .shell> :not(#channels){display:none!important}
+.services-only #channels{padding-top:clamp(36px,5vw,72px);padding-bottom:44px}
+.services-only .rv{opacity:1;transform:none}
